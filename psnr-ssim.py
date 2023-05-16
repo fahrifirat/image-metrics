@@ -39,7 +39,7 @@ for hr_img in os.listdir(hr_folder):
     psnr = cv2.PSNR(hr_img, sr_img)
     ssim_val = ssim(hr_img, sr_img, multichannel=True)
    
-    print(f'image: {name_path}, PSNR: {psnr:.2f}, SSIM: {ssim_val:.2f}, mse: {mse:.5f}, rmse: {rmse:.5f}')
+    print(f'image: {name_path}, PSNR: {psnr:.2f}, SSIM: {ssim_val:.2f}')
 
     total_psnr=total_psnr+psnr
     total_ssim=total_ssim+ssim_val

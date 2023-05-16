@@ -11,7 +11,7 @@ import numpy as np
 hr_folder = 'hr/'
 sr_folder = 'sr/'
 lr_folder = 'lr/'
-output_folder='concatenate/'
+output_folder='cat/'
 
 for hr_img in os.listdir(hr_folder):
 
